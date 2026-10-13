@@ -85,12 +85,6 @@ h1,h2,h3{font-family:var(--display);font-weight:800;text-wrap:balance;margin:0;l
 .ticket li{display:flex;gap:10px;align-items:flex-start}
 .ticket li svg{flex:none;margin-top:4px}
 
-/* gallery of the launch posts */
-.gallery .wrap{padding-block:24px 80px}
-.posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0;padding:0;list-style:none}
-.posts img{display:block;width:100%;height:auto;aspect-ratio:4/5;border-radius:22px;border:1px solid var(--line)}
-.gallery p.note{color:var(--mist);margin:16px 0 0}
-
 /* faq */
 .faq{border-top:1px solid var(--line)}
 .faq .wrap{padding-block:64px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:40px}
@@ -108,13 +102,10 @@ h1,h2,h3{font-family:var(--display);font-weight:800;text-wrap:balance;margin:0;l
 @media (max-width:860px){
   .hero .wrap,.price .wrap,.faq .wrap{grid-template-columns:minmax(0,1fr)}
   .mascot{width:min(70%,260px);order:-1}
-  .steps,.posts{grid-template-columns:minmax(0,1fr)}
-  .posts{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-  .posts img{border-radius:12px}
+  .steps{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:420px){
   .top .btn{font-size:13px;padding:8px 12px;min-height:44px}.brand .sub{display:none}
-  .posts{grid-template-columns:minmax(0,1fr)}
 }
 </style>
 </head>
